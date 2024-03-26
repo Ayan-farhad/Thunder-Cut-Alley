@@ -2,37 +2,191 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #000000 !important;
+  color: #ffffff;
+  font-family: Oswald;
+}
+
+/* //-------------\\ */
+/* //---Navbar---\\ */
+/* //-------------\\ */
+
+.nav-a {
+  color: rgb(174, 174, 174);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-a:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.navLi {
+  display: inline;
+  margin-right: 30px;
+}
+
+.main-nav ul li:last-child {
+  background-color: #ef227d;
+  width: 40px;
+}
+
+.navLogo {
+  width: 82px;
+  margin-top: 20px;
+}
+
+/* //-------------\\ */
+/* //---Home---\\ */
+/* //-------------\\ */
+
+.main-Home{
+  height: 90vh;
+}
+
+.home-address {
+  font-family: 'Courier New';
+}
+
+.home-table {
+  font-family: 'Courier New';
+  color: #ef227d;
+}
+
+.homeLogo {
+  width: 850px;
+}
+
+/* //-------------\\ */
+/* //---About---\\ */
+/* //-------------\\ */
+
+.items-bar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-menuIntro {
+  display: flex;
+}
+
+.about-h2 {
+  font-family: 'Courier New';
+  margin-top: 10px;
+}
+
+.intro-p {
+  width: 30%;
+  text-align: left;
+  margin-left: 130px;
+  margin-top: 80px;
+}
+
+.paragraph {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.tabs-ul ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs-ul ul li {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+.tabs-ul ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.tabs-ul ul li.active span {
+  border-bottom: 2px solid #ef227d;
+}
+
+.tabs-image {
+  width: 850px;
+}
+
+@media screen and (max-width: 998px) {
+  .homeLogo {
+    width: 700px;
+  }
+
+  .items-bar {
+    flex-direction: column;
+  }
+
+  .main-menuIntro {
+    flex-direction: column;
+  }
+
+  .intro-p {
+    width: 50%;
+    text-align: left;
+    align-items: center;
+  }
+
+  .tabs-image {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-a {
+    display: none;
+  }
+
+  .main-Home{
+    height: 70vh;
+  }
+
+  .homeLogo {
+    width: 600px;
+  }
+
+  .tabs-image {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  .homeLogo{
+    width: 450px;
+  }
+  .tabs-image{
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .homeLogo{
+    width: 380px;
   }
 }
