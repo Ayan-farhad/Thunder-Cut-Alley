@@ -1,18 +1,27 @@
 import React from 'react'
+import { ImFacebook } from "react-icons/im";
+import { FaInstagram } from "react-icons/fa";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 function Footer() {
     return (
         <footer className='footer'>
+
+            <ul className='footer-icons'>
+                <li><ImFacebook/></li>
+                <li><FaInstagram/></li>
+                <li><MdOutlineMailOutline/></li>
+            </ul>
             <div className='ul-container'>
                 <ul className='list'>
-                    <li className='headings'>Thunder Cut Alley</li>
+                    <li className='headings' style={{fontFamily: 'Courier New', marginBottom: '15px'}}>Thunder Cut Alley</li>
                     <li>MENU</li>
                     <li>INSTAGRAM</li>
                     <li>FIND US</li>
                     <li>BOOK</li>
                 </ul>
                 <ul className='list'>
-                    <li className='headings'>LOCATION & CONTACT</li>
+                    <li className='headings' style={{fontFamily: 'Courier New', marginBottom: '15px'}}>LOCATION & CONTACT</li>
                     <li>SMITHFIELD,</li>
                     <li>SMITHFIELD SQUARE,</li>
                     <li>DUBLIN 7.</li>
@@ -20,7 +29,7 @@ function Footer() {
                     <li>thundercutalleyrestaurant@gmail.com</li>
                 </ul>
                 <ul className='list'>
-                    <li className='headings'>Opening Hours</li>
+                    <li className='headings' style={{fontFamily: 'Courier New', marginBottom: '15px'}}>Opening Hours</li>
                     <li>Monday: Closed</li>
                     <li>Tuesday: Closed</li>
                     <li>Wednesday: from 5pm</li>

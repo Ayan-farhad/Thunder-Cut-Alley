@@ -3,7 +3,7 @@ import NavTabs from './navTabs';
 
 function OurMenu() {
   return (
-    <div className='main-ourMenu'>
+    <div id='Menu' className='main-ourMenu'>
         <h1 style={{color: '#ef227d'}}>OUR MENU</h1>
         <NavTabs/>
         <div className='top-border' style={border}></div>

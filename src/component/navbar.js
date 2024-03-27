@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from 'react-scroll';
 import NavLogo from '../assest/tca_logo.png';
 
 function Navbar() {
@@ -16,7 +17,9 @@ function Navbar() {
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
 
                     <li className='navLi'>
-                        <a href='#menu' className='nav-a'>MENU</a>
+                        <Link to="Menu" smooth={true} duration={700}>
+                            <a href='#menu' className='nav-a'>MENU</a>
+                        </Link>
                     </li>
 
                     <li className='navLi'>
@@ -42,7 +45,7 @@ function Navbar() {
 
                 <GiHamburgerMenu className={`nav-toggle ${isOpen ? 'active' : ''}`} onClick={toggleNavbar} />
             </nav>
-        </div>
+        </div >
     );
 }
 
