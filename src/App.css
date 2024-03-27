@@ -2,22 +2,7 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 body {
   background-color: #000000 !important;
@@ -51,6 +36,7 @@ body {
 
 .main-nav ul li:last-child {
   background-color: #ef227d;
+  /* color: #ffffff; */
   width: 40px;
 }
 
@@ -59,11 +45,27 @@ body {
   margin-top: 20px;
 }
 
+.nav-a {
+  color: #a09f9f;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.nav-toggle {
+  margin-top: 20px;
+  margin-left: 10px;
+  color: #ef227d;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
 /* //-------------\\ */
 /* //---Home---\\ */
 /* //-------------\\ */
 
-.main-Home{
+.main-Home {
   height: 90vh;
 }
 
@@ -109,6 +111,10 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.tabs-ul {
+  margin-left: 30px;
+}
+
 .tabs-ul ul {
   list-style-type: none;
   padding: 0;
@@ -117,8 +123,14 @@ body {
 
 .tabs-ul ul li {
   display: inline-block;
-  font-size: 20px;
+  font-size: 25px;
   margin-right: 50px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.tabs-ul ul li.active {
+  transform: translateY(-5px);
 }
 
 .tabs-ul ul li a {
@@ -127,12 +139,44 @@ body {
 }
 
 .tabs-ul ul li.active span {
-  border-bottom: 2px solid #ef227d;
+  border-bottom: 4px solid #ef227d;
 }
 
 .tabs-image {
   width: 850px;
+  
 }
+
+
+/* //-------------\\ */
+/* //---Footer---\\ */
+/* //-------------\\ */
+
+.footer{
+  background-color: #1a1919;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.ul-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list li{
+  list-style: none;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.headings{
+  color: #ef227d;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+
 
 @media screen and (max-width: 998px) {
   .homeLogo {
@@ -159,12 +203,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .nav-a {
-    display: none;
-  }
-
-  .main-Home{
-    height: 70vh;
+  .main-Home {
+    height: 65vh;
   }
 
   .homeLogo {
@@ -174,19 +214,84 @@ body {
   .tabs-image {
     width: 480px;
   }
+
+  .main-nav ul {
+    display: none;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+    background: #ef227d;
+    color: #ffffff;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 400px;
+    right: 0;
+    transition: background-color 0.3s, backdrop-filter 0.3s;
+  }
+
+  .main-nav ul li:last-child {
+    background-color: #ef227d;
+  }
+
+  .navLi{
+    padding-bottom: 10px;
+  }
+
+  .navLi a{
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  .main-nav.active ul {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 598px) {
-  .homeLogo{
+  .homeLogo {
     width: 450px;
   }
-  .tabs-image{
+
+  .main-nav ul {
+    left: 200px;
+  }
+
+  .tabs-image {
     width: 350px;
   }
 }
 
 @media screen and (max-width: 448px) {
-  .homeLogo{
-    width: 380px;
+  .homeLogo {
+    width: 300px;
+  }
+
+  .main-nav ul {
+    left: 100px;
+  }
+
+  .tabs-image {
+    width: 300px;
+  }
+
+  .intro-p{
+    margin-left: 40px;
+  }
+
+  .tabs-ul{
+    font-size: 10px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .tabs-image{
+    width: 250px;
   }
 }

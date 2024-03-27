@@ -8,7 +8,7 @@ function Dishes() {
 
     return (
         <div>
-            dishehjwasdbkfk
+            Api fetch pending
             <div className='top-border' style={border}></div>
         </div>
     )

@@ -4,6 +4,7 @@ import Home from './component/home';
 import Aboutthunder from './component/aboutThunder';
 import OurMenu from './component/ourMenu';
 import Dishes from './component/dishes';
+import Footer from './component/footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Aboutthunder/>
       <OurMenu/>
       <Dishes/>
+      <Footer/>
     </div>
   );
 }
