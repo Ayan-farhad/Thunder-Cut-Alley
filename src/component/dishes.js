@@ -2,9 +2,9 @@ import React from 'react'
 import 'animate.css'
 function Dishes() {
 
-    fetch('https://api.spoonacular.com/recipes/complexSearch')
-    .then(res => res.json())
-    .then(res => console.log(res))
+    // fetch('https://www.themealdb.com/images/ingredients')
+    // .then(res => res.json())
+    // .then(res => console.log(res))
 
     return (
         <div>

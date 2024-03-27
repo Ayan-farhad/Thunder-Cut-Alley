@@ -1,8 +1,8 @@
 import React from 'react';
+import NavLogo from '../assest/tca_logo.png';
 import { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from 'react-scroll';
-import NavLogo from '../assest/tca_logo.png';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);

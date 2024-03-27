@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import 'animate.css'; 
+import 'animate.css';
 import brunch from '../assest/brunch.jpg';
 import night from '../assest/night.jpg';
 import drinks from '../assest/drinks.jpg';
@@ -32,8 +32,8 @@ function NavTabs() {
                     </li>
                 </ul>
             </div>
-            
-            <div className='tabs-img' style={{display: 'flex', justifyContent: 'center', marginTop: '2rem'}}>
+
+            <div className='tabs-img' style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
                 <img src={brunch} alt='brunch' className={`tabs-image ${activeTab === 'brunch' ? 'animate__animated animate__pulse' : ''}`} style={{ display: activeTab === 'brunch' ? 'block' : 'none' }} />
                 <img src={night} alt='night' className={`tabs-image ${activeTab === 'night' ? 'animate__animated animate__pulse' : ''}`} style={{ display: activeTab === 'night' ? 'block' : 'none' }} />
                 <img src={drinks} alt='drinks' className={`tabs-image ${activeTab === 'drinks' ? 'animate__animated animate__pulse' : ''}`} style={{ display: activeTab === 'drinks' ? 'block' : 'none' }} />

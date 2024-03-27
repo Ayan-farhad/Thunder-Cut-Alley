@@ -8,28 +8,28 @@ function Footer() {
         <footer className='footer'>
 
             <ul className='footer-icons'>
-                <li><ImFacebook/></li>
-                <li><FaInstagram/></li>
-                <li><MdOutlineMailOutline/></li>
+                <li><ImFacebook /></li>
+                <li><FaInstagram /></li>
+                <li><MdOutlineMailOutline /></li>
             </ul>
             <div className='ul-container'>
                 <ul className='list'>
-                    <li className='headings' style={{fontFamily: 'Courier New', marginBottom: '15px'}}>Thunder Cut Alley</li>
+                    <li className='headings' style={{ fontFamily: 'Courier New', marginBottom: '15px' }}>Thunder Cut Alley</li>
                     <li>MENU</li>
                     <li>INSTAGRAM</li>
                     <li>FIND US</li>
                     <li>BOOK</li>
                 </ul>
                 <ul className='list'>
-                    <li className='headings' style={{fontFamily: 'Courier New', marginBottom: '15px'}}>LOCATION & CONTACT</li>
+                    <li className='headings' style={{ fontFamily: 'Courier New', marginBottom: '15px' }}>LOCATION & CONTACT</li>
                     <li>SMITHFIELD,</li>
                     <li>SMITHFIELD SQUARE,</li>
                     <li>DUBLIN 7.</li>
-                    <li>087 720 2012</li>
-                    <li>thundercutalleyrestaurant@gmail.com</li>
+                    <li>0316 2594406</li>
+                    <li>khaanayan81@gmail.com</li>
                 </ul>
                 <ul className='list'>
-                    <li className='headings' style={{fontFamily: 'Courier New', marginBottom: '15px'}}>Opening Hours</li>
+                    <li className='headings' style={{ fontFamily: 'Courier New', marginBottom: '15px' }}>Opening Hours</li>
                     <li>Monday: Closed</li>
                     <li>Tuesday: Closed</li>
                     <li>Wednesday: from 5pm</li>
@@ -43,6 +43,7 @@ function Footer() {
             <p className='footer-p'>© 2024 Thunder Cut Alley.
                 <span style={{ color: '#ef227d' }}> Website by Ayan-Farhad</span>
             </p>
+            <br />
 
         </footer>
     )
