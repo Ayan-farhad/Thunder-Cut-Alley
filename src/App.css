@@ -186,7 +186,12 @@ body {
   font-weight: bold;
 }
 
+.animate__animated.animate__backInLeft {
+  --animate-duration: 1s;
+}
 
+
+/* -----------------------------Media-Query---------------------------------------- */
 
 @media screen and (max-width: 998px) {
   .homeLogo {
@@ -351,12 +356,4 @@ body {
   .tabs-image {
     width: 250px;
   }
-}
-
-/* //-------------\\ */
-/* //---Footer---\\ */
-/* //-------------\\ */
-
-.animate__animated.animate__backInLeft {
-  --animate-duration: 1s;
 }
