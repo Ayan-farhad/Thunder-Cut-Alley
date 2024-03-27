@@ -35,8 +35,8 @@ body {
 }
 
 .main-nav ul li:last-child {
-  background-color: #ef227d;
-  width: 40px;
+    background-color: #ef227d; /* Background color */
+    padding: 10px;
 }
 
 .navLogo {
@@ -78,7 +78,7 @@ body {
 }
 
 .homeLogo {
-  width: 850px;
+  width: 900px;
 }
 
 /* //-------------\\ */
@@ -244,11 +244,12 @@ body {
     top: 0;
     left: 400px;
     right: 0;
-    transition: background-color 0.3s, backdrop-filter 0.3s;
+    z-index: 10;
   }
 
   .main-nav ul li:last-child {
     background-color: #ef227d;
+    padding: 0;
   }
 
   .navLi {
@@ -326,4 +327,12 @@ body {
   .tabs-image {
     width: 250px;
   }
+}
+
+/* //-------------\\ */
+/* //---Footer---\\ */
+/* //-------------\\ */
+
+.animate__animated.animate__backInLeft {
+  --animate-duration: 1s;
 }

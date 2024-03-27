@@ -1,5 +1,5 @@
 import React from 'react'
-
+import 'animate.css'
 function Dishes() {
 
     fetch('https://api.spoonacular.com/recipes/complexSearch')
@@ -9,7 +9,7 @@ function Dishes() {
     return (
         <div>
             Api fetch pending
-            <div className='top-border' style={border}></div>
+            <div className='top-border animate__animated animate__backInLeft' style={border}></div>
         </div>
     )
 }

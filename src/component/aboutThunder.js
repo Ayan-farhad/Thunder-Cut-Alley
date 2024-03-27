@@ -1,15 +1,16 @@
 import React from 'react'
 import Items from './items';
 import Menuintro from './menuIntro';
+import 'animate.css';
 
 function Aboutthunder() {
     return (
         <div className='about-container'>
-            <div className='top-border' style={border}></div>
+            <div className='top-border animate__animated animate__backInLeft' style={border}></div>
             <Items />
-            <div className='top-border' style={border}></div>
+            <div className='top-border animate__animated animate__backInLeft' style={border}></div>
             <Menuintro />
-            <div className='top-border' style={borderBottom}></div>
+            <div className='top-border animate__animated animate__backInLeft' style={borderBottom}></div>
         </div>
     )
 }

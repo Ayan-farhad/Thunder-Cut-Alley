@@ -1,12 +1,13 @@
 import React from 'react'
 import NavTabs from './navTabs';
+import 'animate.css';
 
 function OurMenu() {
   return (
     <div id='Menu' className='main-ourMenu'>
         <h1 style={{color: '#ef227d'}}>OUR MENU</h1>
         <NavTabs/>
-        <div className='top-border' style={border}></div>
+        <div className='top-border animate__animated animate__backInLeft' style={border}></div>
     </div>
   )
 }
